@@ -15,7 +15,9 @@
 * 각 요구사항을 구현하는 것이 중요한 것이 아니라 구현 과정을 통해 학습한 내용을 인식하는 것이 배움에 중요하다. 
 
 ### 요구사항 1 - http://localhost:8080/index.html로 접속시 응답
-* 
+* 수정하고 mvn clean package를 다시하고 java -cp 실행해야 되는데 그냥 계속 java -cp 실행해서 수정 사항이 반영이 안되서 30분 헤맴
+* `mvn clean build` -> `mcp` 라는 alias로 ./zshrc에 등록
+* `java -cp "target/classes:target/dependency/*" webserver.WebServer 8080 &` -> `ws` 라는 alias로 ./zshrc에 등록
 
 ### 요구사항 2 - get 방식으로 회원가입
 * 

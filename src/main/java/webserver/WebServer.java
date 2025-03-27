@@ -19,7 +19,9 @@ public class WebServer {
         }
 
         // 서버소켓을 생성한다. 웹서버는 기본적으로 8080번 포트를 사용한다.
-
+        /**
+         * ServerSocket은 Java에서 TCP 서버를 구현하기 위한 클래스
+         */
         try (ServerSocket listenSocket = new ServerSocket(port)) {
             log.info("Web Application Server started {} port.", port);
 
