@@ -29,7 +29,9 @@
 * 
 
 ### 요구사항 5 - cookie
-* 
+* 로그인 후에 쿠키에 `logined=true`가 없는 에러 발생
+* `dos.writeBytes("Set-Cookie: logined=true \r\n");`에서 Path 설정하지 않아서 발생
+* `dos.writeBytes("Set-Cookie: logined=true; Path=/ \r\n");`로 수정해서 해결
 
 ### 요구사항 6 - stylesheet 적용
 * 
